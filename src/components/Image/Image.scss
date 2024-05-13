@@ -1,3 +1,5 @@
+@import "../../assets/styles/variables";
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -5,7 +7,7 @@
 
 .image {
   max-width: 100%;
-  border-radius: 1rem;
+  border-radius: $default-border;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 768px) {

@@ -4,7 +4,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 1rem;
+  border-radius: $default-border;
   padding: 0 1rem;
   cursor: pointer;
   transition: all 0.3s ease;

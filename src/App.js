@@ -15,17 +15,19 @@ function App() {
     <Router>
       {/* Navbar */}
       <Navbar />
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/vote" element={<Vote />} />
-        <Route path="/villes-et-nations" element={<TownAndNation />} />
-        <Route path="/profil" element={<Profile />} />
-        <Route path="/inscription" element={<Register />} />
-        <Route path="/connexion" element={<Login />} />
-      </Routes>
-      {/* Footer */}
-      <Footer />
+      <div className="content">
+        {/* Routes */}
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/vote" element={<Vote />} />
+          <Route path="/villes-et-nations" element={<TownAndNation />} />
+          <Route path="/profil" element={<Profile />} />
+          <Route path="/inscription" element={<Register />} />
+          <Route path="/connexion" element={<Login />} />
+        </Routes>
+        {/* Footer */}
+        <Footer />
+      </div>
     </Router>
   );
 }
