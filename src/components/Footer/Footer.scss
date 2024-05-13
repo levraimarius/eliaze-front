@@ -1,0 +1,66 @@
+@import "../../assets/styles/variables";
+
+footer {
+  padding-top: 10rem;
+  width: 100%;
+  color: $white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  // Top footer elements
+  .footer-grid {
+    margin-bottom: 1rem;
+  }
+
+  .yellow-bar {
+    position: relative;
+    border-left: 3px solid $yellow;
+    transition: padding-left 0.3s ease;
+    padding: 0.8em 0 0.8em 3em;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      padding-left: 3.5em;
+      color: $white;
+    }
+
+    & svg {
+      padding-right: 1em;
+    }
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: $yellow;
+  }
+
+  .carousel {
+    background-color: $orange;
+    padding: 10px;
+
+    &-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  // Bottom footer elements
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-content {
+    text-align: left;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .right-content {
+    text-align: right;
+    font-size: 0.8rem;
+  }
+}

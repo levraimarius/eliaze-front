@@ -1,0 +1,50 @@
+@import "../../assets/styles/variables";
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+
+  p {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0.5em 0;
+  }
+
+  &.orange {
+    background-color: $orange;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      color: $yellow;
+      border-color: $yellow;
+    }
+  }
+
+  &.yellow {
+    background-color: $yellow;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      color: $orange;
+      border-color: $orange;
+    }
+  }
+
+  .button-icon {
+    margin-left: 0.5rem;
+  }
+
+  .button-image {
+    // max-width: 72px;
+    margin-left: 0.5rem;
+  }
+}

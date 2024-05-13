@@ -1,0 +1,14 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 768px) {
+    max-width: 80%;
+  }
+}
