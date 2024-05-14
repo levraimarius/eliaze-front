@@ -57,7 +57,6 @@ const Navbar = () => {
               text="Connexion"
               link="/connexion"
               icon={MemoryArrowRightCircle}
-              // imageLink="https://minotar.net/helm/Aznaar/32.png"
             />
           </li>
         </ul>

@@ -5,25 +5,9 @@ import Icon from "@mdi/react";
 import { Link } from "react-router-dom";
 import { MemoryArrowUpRightBox } from "@pictogrammers/memory";
 import Subtitle from "../Subtitle/Subtitle";
-import Carousel from "../Carousel/Carousel";
-
-import buildericon from "../../assets/files/images/builder_icon.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const items = [
-    {
-      imageUrl: buildericon,
-      altText: "Texte alternatif de l'image 1",
-      caption: "Légende de l'image 1",
-    },
-    {
-      imageUrl: buildericon,
-      altText: "Texte alternatif de l'image 2",
-      caption: "Légende de l'image 2",
-    },
-  ];
 
   return (
     <footer>
@@ -51,7 +35,6 @@ const Footer = () => {
         </div>
         <div className="grid-item">
           <Subtitle text="Nos réseaux" />
-          <Carousel items={items} />
         </div>
       </Grid>
       <div className="footer-content">

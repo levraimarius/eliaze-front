@@ -1,0 +1,15 @@
+@import "../../assets/styles/variables";
+
+.arrow-pages {
+  margin-bottom: 1em;
+}
+
+.arrow-icon {
+  margin-right: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $yellow;
+  }
+}
