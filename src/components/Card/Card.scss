@@ -1,15 +1,35 @@
 @import "../../assets/styles/variables";
 
-.cards-container {
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, calc(100% / 4 - 1em)));
   gap: 1em;
   margin: 0 auto;
 }
 
 .card {
   background-color: $light-black;
+  border: 2px solid transparent;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1em;
+  transition: all 0.3s ease;
+
+  & p {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $black;
+    border-color: $yellow;
+    cursor: pointer;
+
+    & h3 {
+      color: $yellow;
+    }
+
+    & p {
+      color: $yellow;
+    }
+  }
 }

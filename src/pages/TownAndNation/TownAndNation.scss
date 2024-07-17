@@ -1,15 +1,80 @@
 @import "../../assets/styles/variables";
 
-.arrow-pages {
-  margin-bottom: 1em;
-}
+.tn-content {
+  .arrow-pages {
+    margin-bottom: 1em;
+  }
 
-.arrow-icon {
-  margin-right: 1em;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  .arrow-icon {
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
-  &:hover {
-    color: $yellow;
+    &:hover {
+      color: $yellow;
+    }
+
+    &.disabled {
+      color: $light-black !important;
+      cursor: not-allowed;
+    }
+  }
+
+  & h3 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  & .tn-title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  & .modal-tn-title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .table-container {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 1em;
+    text-align: left;
+    table-layout: auto;
+
+    th,
+    td {
+      padding: 12px 15px;
+      border: 1px solid $white;
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid $white;
+      }
+    }
+
+    th {
+      background-color: $light-black;
+      color: $white;
+      width: 0%;
+      white-space: nowrap;
+    }
+
+    td:first-of-type {
+      color: $white;
+    }
   }
 }

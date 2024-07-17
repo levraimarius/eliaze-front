@@ -1,0 +1,27 @@
+@import "../../assets/styles/variables";
+
+.table-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-table {
+  width: 80%;
+  border-collapse: collapse;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+}
+
+.custom-table th {
+  background-color: $light-black;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: $light-black;
+}
